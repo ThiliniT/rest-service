@@ -19,20 +19,20 @@ tags:
 paths:
   /greeting:
     get:
-      summary: "Retrieve a customer by id"
+      summary: "Greet a customer"
       operationId: "getCustomerById"
       description: |
-        Retrieve a customer by account id.
+        Greet a customer
       parameters:
         - name: name
           in: query
-          description: "Customer account Id"
+          description: "Customer name"
           required: true
           schema:
             type: string
       responses:
         "200":
-          description: "The Customer with Id"
+          description: "Greeting for customer"
           content:
             application/json:
               schema:
